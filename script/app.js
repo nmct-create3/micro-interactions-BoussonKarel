@@ -1,4 +1,5 @@
 let passwordInput, passwordCheckbox;
+
 function handleFloatingLabel() {
    
 }
@@ -12,7 +13,6 @@ function handlePasswordSwitcher() {
         else {
             passwordInput.type = "password";
         }
-        console.log("checked");
     });
     // We gaan luisteren of er geklikt wordt op de checkbox.
     // Als er geklikt wordt, veranderen we het type van de input van 'password' naar 'text' en vice versa.
@@ -21,7 +21,9 @@ function handlePasswordSwitcher() {
 document.addEventListener('DOMContentLoaded', function () {
     passwordInput = document.querySelector(".js-password-input");
     passwordCheckbox = document.querySelector(".js-password-checkbox");
+
     console.log('Script loaded!');
+
     handleFloatingLabel();
     handlePasswordSwitcher();
 });
